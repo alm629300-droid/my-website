@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>جمل إنجليزية مع فيديو</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">🎧</div>
+      <div class="titles">
+        <h1>جمل إنجليزية مع فيديو</h1>
+        <p>تعلم النطق الصحيح عبر أمثلة قصيرة</p>
+      </div>
+    </div>
+
+    <div class="controls">
+      <input id="searchInput" type="search" placeholder="ابحث عن جملة أو كلمة..." />
+      <div class="repeat-controls" title="التحكم في إعادة التشغيل">
+        <label class="switch">
+          <input type="checkbox" id="loopToggle">
+          <span class="slider"></span>
+        </label>
+        <span class="label">تكرار مستمر</span>
+
+        <select id="repeatCount">
+          <option value="1">1 مرة</option>
+          <option value="2">2 مرات</option>
+          <option value="3">3 مرات</option>
+          <option value="5">5 مرات</option>
+          <option value="10">10 مرات</option>
+          <option value="infinite">غير محدود</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <nav class="categories">
+    <button class="chip active" data-cat="all">الكل</button>
+    <button class="chip" data-cat="daily">جمل يومية</button>
+    <button class="chip" data-cat="work">جمل عمل</button>
+    <button class="chip" data-cat="travel">جمل سفر</button>
+    <button class="chip" data-cat="friday">جمل الجمعة</button>
+  </nav>
+
+  <main>
+    <section id="lessonsGrid" class="grid"></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> مشروع تعليم النطق. تم الإنشاء كنسخة أولية.</p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalSentence">
+    <div class="modal-content">
+      <button class="close" id="closeModal" aria-label="إغلاق">✖</button>
+      <h2 id="modalSentence"></h2>
+      <p class="transl" id="modalTransl"></p>
+      <video id="modalVideo" controls playsinline>
+        <source id="modalSrc" src="" type="video/mp4"/>
+        متصفحك لا يدعم الفيديو.
+      </video>
+      <div class="player-actions">
+        <button id="playBtn">▶ تشغيل</button>
+        <button id="replayBtn">🔁 إعادة من البداية</button>
+        <button id="slowerBtn">⏪ أبطأ</button>
+        <button id="fasterBtn">⏩ أسرع</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
