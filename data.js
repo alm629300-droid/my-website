@@ -5,7 +5,7 @@ const LESSONS = [
     category: "daily",
     sentence: "How are you today?",
     translation: "كيف حالك اليوم؟",
-    videoSrc: "عامر_________الفيديو.mp4"
+    videoSrc: "Amer.mp4"
   },
   {
     id: "d2",
@@ -35,4 +35,5 @@ const LESSONS = [
     translation: "أراك يوم الجمعة.",
     videoSrc: "assets/friday_see_you.mp4"
   }
+
 ];
