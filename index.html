@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>منصة كورسات - الرئيسية</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <div class="logo">🎓</div>
+        <div class="brand-text">
+          <h1>منصة كورسات</h1>
+          <p class="tag">تعلم احترافي — وورد، إكسل، والمزيد</p>
+        </div>
+      </a>
+
+      <div class="header-actions">
+        <div class="search-wrap">
+          <input id="searchInput" type="search" placeholder="ابحث عن كورس أو كلمة..." aria-label="بحث" />
+          <button id="searchBtn" class="btn small">بحث</button>
+        </div>
+
+        <nav class="nav">
+          <div class="dropdown">
+            <button class="dropbtn btn">الدورات</button>
+            <div class="dropdown-content" id="coursesDropdown" aria-label="قائمة الكورسات">
+              <a href="course-word.html">كورس الوورد</a>
+              <a href="course-excel.html">كورس الإكسل</a>
+            </div>
+          </div>
+
+          <a href="courses.html" class="btn accent">عرض الكورسات</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h2>اطلق مهاراتك مع دورات مصممة بعناية</h2>
+        <p>كورسات احترافية في الوورد والإكسل، دروس عملية قصيرة ومباشرة مع متابعة عملية.</p>
+        <div class="hero-actions">
+          <a href="courses.html" class="btn big accent">ابدأ الآن — عرض الكورسات</a>
+          <a href="#features" class="btn big">المزايا</a>
+        </div>
+      </div>
+      <div class="hero-illustration">
+        <img src="assets/hero-placeholder.svg" alt="تعليم" />
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <article class="feature">
+        <h3>محتوى احترافي</h3>
+        <p>دروس مركزة ومقسمة بشكل واضح لتسهيل التعلم.</p>
+      </article>
+      <article class="feature">
+        <h3>واجهة مشاهدة داخلية</h3>
+        <p>تشغيل الفيديو داخل الموقع دون توجيه ليوتيوب للحفاظ على تركيز المتعلم.</p>
+      </article>
+      <article class="feature">
+        <h3>تتبع التقدم</h3>
+        <p>قريبا: إمكانية تسجيل وحفظ التقدم في الدورات.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> منصة كورسات — نسخة تجريبية</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
